@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_asset/myfirststyle.css">
+    <title>Contact Us | Shelfie</title>
+    <meta name="description" content="Contact Shelfie with questions, feedback, or enquiries about our books and services.">
+
+</head>
+<body>
+    <header>
+        <!-- Company Logo -->
+        <img src="_images/logo.png" alt="Shelfie Online Book store's logo" class="logo-image">
+        <h1>Shelfie</h1>
+        <nav>
+            <!-- Navigation Menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About-Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact-Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+          <h2>Get in Touch with us</h2>
+
+          
+<section class="info-box">
+    <h2>Explore Our Map Locations</h2>
+    <p>Select a location to view it on the map.</p>
+
+    <button type="button" id="pretoriaMapButton">
+        View Pretoria Map
+    </button>
+
+    <button type="button" id="capeTownMapButton">
+        View Cape Town Map
+    </button>
+</section>
+
+          
+            <div class="container">
+
+            <div class="book-table">
+                <iframe id="pretoriaMap" src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d14374.265249366908!2d28.178858!3d-25.7518518!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1e95632c2e3e256f%3A0xc0d6fce5e0531179!2sPretoria%20CBD%20Bus%20Stop%2C%20Bosman%20Street%2C%20Pretoria%20Central%2C%20Pretoria%2C%20153%20M18%2C%20Pretoria%20Central%2C%20Pretoria%2C%200002!3m2!1d-25.7454492!2d28.1854998!5e0!3m2!1sen!2sza!4v1788986893805!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            
+            <div class="book-table">
+               <iframe id="capeTownMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105938.98963172754!2d18.271948697265625!3d-33.9258622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6763296651a3%3A0xbb24ceb9324f3aa7!2sCentral%20Library%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1793015215435!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+
+            </div>  
+          
+         
+
+    <main>
+
+    </main>
+
+    
+<section class="info-box">
+    <h2>Contact Shelfie</h2>
+
+    <p>Have a question or need assistance? Send us a message.</p>
+
+   <form action="https://formsubmit.co/nemaguvhunilusani2@gmail.com"
+      method="POST" id="contactForm">
+
+        <label for="contactName">Full Name:</label>
+        <input type="text" id="contactName" name="contactName"
+               minlength="2" required>
+
+        <label for="contactEmail">Email Address:</label>
+        <input type="email" id="contactEmail" name="nemaguvhunilusani2@gmail.com"
+       required>
+
+        <label for="messageType">Message Type:</label>
+        <select id="messageType" name="messageType" required>
+            <option value="">Choose a message type</option>
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Book Order">Book Order</option>
+            <option value="Book Availability">Book Availability</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Complaint">Complaint</option>
+        </select>
+
+        <label for="contactMessage">Your Message:</label>
+        <textarea id="contactMessage" name="message"
+          rows="5" minlength="10" maxlength="1000"
+          required></textarea>
+
+        <button type="submit">Send Email</button>
+        <button type="reset">Clear Form</button>
+    </form>
+
+    <p id="contactResponse" role="status"></p>
+</section>
+
+
+    <footer>
+       <p>© 2026 Shelfie Online Bookstore</p>
+    </footer>
+
+<script src="js_assets/script.js"></script>
+
+</body>
+</html>
