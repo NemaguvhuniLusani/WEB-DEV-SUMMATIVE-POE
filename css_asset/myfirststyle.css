@@ -1,0 +1,331 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: rgb(121, 240, 220);
+}
+
+h1 {
+    color: rgb(236, 239, 157);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgb(6, 211, 211);
+}
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+}
+
+h2{
+    padding: 25px;
+}
+
+h4 {
+    color: rgb(54, 231, 210);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    padding: 30px;
+   
+}
+
+.responsive-image {
+    
+    height: 400px;
+    max-width: 500px;
+}
+
+.logo-image{
+    height: auto;
+    max-width: 150px;
+    border-radius: 90px;
+    padding: 3px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.info-box {
+    background-color: rgb(255, 248, 222);
+    margin: 5px;
+    padding: 20px;
+    color: rgb(129, 124, 124);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px;
+}
+
+.book-table {
+    background-color: rgb(255, 248, 222);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+.aboout-container{
+    width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: auto auto;
+gap: 20px;
+}
+.about-box {
+background-color: rgb(255, 248, 222);
+padding: 25px;
+border-radius: 15px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+about-box h3 {
+color: rgb(54, 231, 210);
+font-size: 25px;
+margin-bottom: 15px;
+}
+
+.about-box p {
+color: rgb(129, 124, 124);
+font-size: 16px;
+line-height: 1.6;
+}
+footer {
+background-color: rgba(180, 91, 8, 0.777);
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 50px;
+}
+
+
+@media screen and (max-width: 789px) {
+body{
+    background-color: rgb(247, 247, 230);
+}
+.container {
+    background-color: rgb(255, 255, 255);
+        grid-template-columns: inline-grid;
+        grid-template-columns: auto auto auto;
+}
+
+h1 {
+        font-size: 30px;
+}
+h2 {
+        font-size: 20px;
+    }
+.about-container { 
+grid-template-columns: auto; 
+} 
+.about-box h3 { 
+    font-size: 22px; 
+}
+
+}
+
+@media screen and (max-width: 480px) {
+body{
+    background-color: rgb(182, 243, 253);
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+nav ul{
+    flex-direction: column;
+}
+nav ul li a{
+    display: block;
+}
+
+h1 {
+        font-size: 20px;
+}
+h2 {
+        font-size: 15px;
+    }
+.about-container { 
+ width: 95%; 
+} 
+ .about-box { 
+ padding: 20px; 
+} 
+.about-box h3 { 
+    font-size: 20px; 
+} 
+.about-box p { 
+ font-size: 14px; 
+}
+
+}
+
+/* JavaScript image gallery lightbox */
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+    padding: 20px;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+#lightbox button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Enquiry form styling */
+
+#enquiryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#enquiryForm input,
+#enquiryForm select,
+#enquiryForm textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#enquiryForm button {
+    padding: 12px;
+    background-color: rgb(6, 211, 211);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#enquiryForm button:hover {
+    background-color: rgb(121, 240, 220);
+}
+
+#enquiryResponse {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Contact form styling */
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    padding: 12px;
+    background-color: rgb(6, 211, 211);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background-color: rgb(121, 240, 220);
+}
+
+#contactResponse {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Shelfie service search styling */
+
+#serviceSearch {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#searchMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Interactive map buttons */
+
+#pretoriaMapButton,
+#capeTownMapButton {
+    padding: 12px 18px;
+    margin: 5px;
+    background-color: rgb(178, 236, 234);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#pretoriaMapButton:hover,
+#capeTownMapButton:hover {
+    background-color: rgb(227, 228, 189);
+}
+
+iframe {
+    max-width: 100%;
+}
+
+
